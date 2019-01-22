@@ -1,0 +1,6 @@
+<ngb-accordion [closeOthers]="true" activeIds="static-0">
+  <ngb-panel id="static-{{i}}" [title]="message.title" *ngFor="let message of inboxMessages;let i = index">
+    <ng-template ngbPanelContent>
+      {{message.content}} </ng-template>
+  </ngb-panel>
+</ngb-accordion>
